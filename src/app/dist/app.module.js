@@ -14,13 +14,14 @@ var app_component_1 = require("./app.component");
 var layout_component_1 = require("./layout/layout.component");
 //Shared Module Componets Header And Footer
 var shared_module_1 = require("./shared/shared.module");
+var core_module_1 = require("./core/core.module");
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         core_1.NgModule({
             declarations: [app_component_1.AppComponent, layout_component_1.LayoutComponent],
-            imports: [platform_browser_1.BrowserModule, app_routing_module_1.AppRoutingModule, shared_module_1.SharedModule],
+            imports: [platform_browser_1.BrowserModule, app_routing_module_1.AppRoutingModule, shared_module_1.SharedModule, core_module_1.CoreModule],
             providers: [],
             bootstrap: [app_component_1.AppComponent]
         })

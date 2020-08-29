@@ -11,13 +11,15 @@ var core_1 = require("@angular/core");
 var common_1 = require("@angular/common");
 var header_component_1 = require("./components/header/header.component");
 var footer_component_1 = require("./components/footer/footer.component");
+var animations_1 = require("@angular/platform-browser/animations");
+var toolbar_1 = require("@angular/material/toolbar");
 var SharedModule = /** @class */ (function () {
     function SharedModule() {
     }
     SharedModule = __decorate([
         core_1.NgModule({
             declarations: [header_component_1.HeaderComponent, footer_component_1.FooterComponent],
-            imports: [common_1.CommonModule],
+            imports: [common_1.CommonModule, animations_1.BrowserAnimationsModule, toolbar_1.MatToolbarModule],
             exports: [header_component_1.HeaderComponent, common_1.CommonModule, footer_component_1.FooterComponent]
         })
     ], SharedModule);

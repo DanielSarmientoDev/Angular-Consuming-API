@@ -6,9 +6,11 @@ import { AppComponent } from './app.component';
 import { LayoutComponent } from './layout/layout.component';
 //Shared Module Componets Header And Footer
 import { SharedModule } from './shared/shared.module';
+import { CoreModule } from './core/core.module';
+
 @NgModule({
   declarations: [AppComponent, LayoutComponent],
-  imports: [BrowserModule, AppRoutingModule, SharedModule],
+  imports: [BrowserModule, AppRoutingModule, SharedModule, CoreModule],
   providers: [],
   bootstrap: [AppComponent],
 })
